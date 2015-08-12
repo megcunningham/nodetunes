@@ -1,0 +1,24 @@
+{
+  "name": "nodetunes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megcunningham/nodetunes.git"
+  },
+  "author": "Meg Cunningham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/megcunningham/nodetunes/issues"
+  },
+  "homepage": "https://github.com/megcunningham/nodetunes#readme",
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "mongodb": "^2.0.40"
+  }
+}
