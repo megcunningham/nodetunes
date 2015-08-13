@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title><%= title %>| Node Tunes Artists Page </title>
+	<title><%= title %> Node Tunes Artists Page </title>
 	</head>
 <body>
-
+<h1> Node Tunes | Artists</h1>
+<a href="/artists/new/">Go to New Artist</a>
 	<table>
 		<thead>
 			<tr>
 				<th>Artist</th>
 				<th>Genre</th>
-				<th>Wiki</th>
+				<th>Wikis</th>
 			</tr>
 		</thead>
     <tbody>
@@ -20,8 +21,8 @@
           <td><%= artist.genre %></td>
           <td><%= artist.wiki %></td>
           <td>
-             	<form action="/artist/<%= artist._id %>/submit" method="POST">
-   						</form>
+						<form action="/artists <%= artists._id %>/submit" method="POST">
+ 						</form>
    				</td>
         </tr>
       <% }); %>

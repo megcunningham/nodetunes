@@ -15,13 +15,13 @@ router.get('/', function (req, res) {
     var formattedArtist = artists.map(function (artist) {
       return {
         _id:      artists._id,
-        artist:   artists.artists,
+        artists:  artists.artists,
         genre:    artists.genre,
         wiki:     artists.wiki 
       };
     });
 
-    res.render('templates/index-table', {artists: formattedArtist});
+    res.render('templates/artists-table', {artists: formattedArtist});
   });
 });
 
@@ -33,7 +33,7 @@ router.post('/', function (req, res) {
   var collection = global.db.collection('artists');
 
   collection.save(req.body, function () {
-    res.redirect('/artists')
+    res.redirect('/artists');
   });
 });
 
